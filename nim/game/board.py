@@ -9,7 +9,7 @@ class Board():
     def apply(self, move):
         pile = move.get_pile()
         stones = move.get_stones()
-        Self._piles[pile] = max(0, self.piles[pile] - stones)
+        self._piles[pile] = max(0, self.piles[pile] - stones)
 
     def _prepare(self):
         piles = random.randint(2, 5)
