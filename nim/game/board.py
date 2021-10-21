@@ -21,7 +21,7 @@ class Board():
         text = '\n----------------'
         for pile, stones in enumerate(self._piles):
             text += (f'\n{pile}:' + 'o ' * stones)
-        text += '\n--------------'
+        text += '\n---------------'
         return text
 
 
